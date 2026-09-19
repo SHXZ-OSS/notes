@@ -1,0 +1,43 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^12",
+      "onFail": "error"
+    },
+    "runtime": {
+      "name": "node",
+      "version": ">=24",
+      "onFail": "error"
+    }
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "svelte-check --tsconfig ./tsconfig.json && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write src \"*.{ts,js,json,css,html,yaml}\"",
+    "mock": "node scripts/mock-server.mjs"
+  },
+  "dependencies": {
+    "@lucide/svelte": "^1.47.0",
+    "jspdf": "^4.2.1",
+    "jszip": "^3.10.2",
+    "kampsy-ui": "^2.9.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.1",
+    "prettier": "^3.9.8",
+    "svelte": "^5.57.0",
+    "svelte-check": "^4.7.6",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.0"
+  }
+}
